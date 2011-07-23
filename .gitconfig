@@ -1,0 +1,40 @@
+[user]
+	name = <name>
+	email = <email>
+[core]
+  editor = "vim"
+  legacyheaders = false
+	excludesfile = $HOME/.gitignore
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[merge]
+  tool = vimdiff
+[repack]
+  usedeltabaseoffset = true
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  fx = !git fetch && tig
+  x = !tig
+  rm-all = !git st | ack deleted | awk '{print $3}' | xargs git rm
+[push]
+  default = current
+[github]
+	user = <user>
+	token = <token>
