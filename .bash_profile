@@ -86,6 +86,10 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+if [ -f ~/.knife-completion.bash ]; then
+  . ~/.knife-completion.bash
+fi
+
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
