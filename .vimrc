@@ -5,7 +5,7 @@ set nocompatible          " We're running Vim, not Vi!
 syntax on                 " Enable syntax highlighting
 set t_Co=256
 set mouse=a
-colorscheme black
+colorscheme railscasts
 set ai ts=2 sw=2 sts=2 et " autoindent with two spaces, always expand tabs
 
 set foldmethod=syntax
